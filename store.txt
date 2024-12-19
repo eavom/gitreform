@@ -1,0 +1,6 @@
+while ($true) {
+($(git log -1 --pretty=fuller)[2])
+Write-Host ""
+Write-Host ""
+Start-Sleep -Seconds 2
+}
