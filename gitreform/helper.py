@@ -1,7 +1,14 @@
 import sys
 import random
 
-class TextHelper:
+class AppHelper:
+    pass
+
+class FileHelper:
+    def convert_file_to_list(me, file_source, file_path):
+        pass
+
+class DataHelper:
     @staticmethod
     def __get_list_of_messages():
         with open(f'{sys.path[0]}/collection/commit_messages.csv', 'r') as file:
@@ -17,11 +24,8 @@ class TextHelper:
 
         return message
     
-class FileHelper:
-    pass
-
-class DataHelper:
-    pass
-
 class WebHelper:
     pass
+
+if __name__ == '__main__':
+    datahelper = DataHelper()
