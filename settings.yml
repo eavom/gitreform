@@ -24,3 +24,7 @@ settings:
     commit-messages:
       online-source: ''
       offline-source: '../datavalut/commit_message.csv'
+
+  templates:
+    - heart.md
+    - git.md
