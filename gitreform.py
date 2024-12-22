@@ -1,13 +1,13 @@
 import random
 from datetime import datetime, timedelta
-from gitreform.helper import TextHelper
+from gitreform.helper import DataHelper
 from gitreform.options import Level
 
 # Function to generate random datetimes with varying times, skipping days randomly
 def generate_random_datetimes(start_date, end_date):
     current_date = start_date
     datetime_list = []    
-        
+
     while current_date <= end_date:
 
         # Generate a random number of times (between 5 and 50) for the current date
@@ -45,7 +45,7 @@ end_date = datetime.now()
 
 # Generate the list of random datetimes
 random_datetimes = generate_random_datetimes(start_date, end_date)
-commit_helper = TextHelper()
+commit_helper = DataHelper()
 file = open("generated_file.txt", "a")
 
 # Print the generated datetimes

@@ -1,0 +1,26 @@
+# app info
+app: 'gitreform'
+version: 1.0
+
+# app settings
+# please do not change any of these settings in order to get this source work well
+settings:
+
+  commit:
+    level:
+      low:
+        minimum: 1
+        maximum: 5
+      medium:
+        minimum: 6
+        maximum: 10
+      high:
+        minimum: 11
+        maximum: 25
+    gap-probablity: 20
+  
+  datasources:
+    source-type: 'online'
+    commit-messages:
+      online-source: ''
+      offline-source: '../datavalut/commit_message.csv'
