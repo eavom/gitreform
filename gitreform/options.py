@@ -19,3 +19,11 @@ class App:
     CONFIG_TYPE = ConfigType.YAML
     CONFIG_NAME = 'settings.yml'
     VERBOSE = True
+    TITLE = '''
+                _
+     _______   (_) ___
+    / __  / / / / / /
+   / /_/ / / /_/ / /_
+   \__, /_/ /_/  \__/
+   /____/
+    '''
