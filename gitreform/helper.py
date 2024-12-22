@@ -2,9 +2,6 @@ import sys
 import random
 
 class TextHelper:
-    def __init__(self):
-        pass
-
     @staticmethod
     def __get_list_of_messages():
         with open(f'{sys.path[0]}/collection/commit_messages.csv', 'r') as file:
@@ -19,3 +16,12 @@ class TextHelper:
         message = commit_messages[random.randint(0, len(commit_messages)-1)].rstrip()
 
         return message
+    
+class FileHelper:
+    pass
+
+class DataHelper:
+    pass
+
+class WebHelper:
+    pass
