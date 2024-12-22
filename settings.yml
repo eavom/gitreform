@@ -22,9 +22,10 @@ settings:
   datasources:
     source-type: 'online'
     commit-messages:
-      online-source: ''
+      online-source: 'https://bit.ly/gh_eavom_commit_messages'
       offline-source: '../datavalut/commit_message.csv'
 
   templates:
-    - heart.md
-    - git.md
+    - 'love.md'
+    - 'heart.md'
+    - 'git.md'

@@ -1,9 +1,25 @@
 import random
 from datetime import datetime, timedelta
-from gitreform.helper import DataHelper
-from gitreform.options import Level
+from gitreform.handler import AppHandler
 
-# Function to generate random datetimes with varying times, skipping days randomly
+
+class GitReform:
+    def run(self):
+        app_handler = AppHandler()
+        
+
+
+
+if __name__ == '__main__':
+    try:
+        GitReform().run()
+    except(Exception):
+        raise
+
+
+
+'''
+
 def generate_random_datetimes(start_date, end_date):
     current_date = start_date
     datetime_list = []    
@@ -57,3 +73,5 @@ for dt in random_datetimes:
     file.write(f'\ngit commit --allow-empty -m "{commit_message}" | Out-Null')
 
 file.close()
+
+'''
