@@ -30,16 +30,16 @@ class ConfigHandler:
         try:      
             if self.config_type == ConfigType.YAML:
 
-                if App.VERBOSE: print(f'settings.yml : {self.config_path}')
-                
+                if App.VERBOSE: print(f'{App.CONFIG_NAME} Location : {self.config_path}')
+
                 config = yaml.safe_load(Path(self.config_path).read_text())
             else:
-                raise Exception('Unable to read settings.yml or it''s broken!')
+                raise Exception(f'Unable to read {App.CONFIG_NAME} or it''s broken!')
         except(Exception):
             raise
 
         if config is None:
-            raise Exception('Settings.yml is broken')
+            raise Exception(f'{App.CONFIG_NAME} is broken')
         else:
             return config
 
